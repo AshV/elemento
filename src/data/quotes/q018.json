@@ -1,0 +1,20 @@
+{
+  "id": "q018",
+  "content": "Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, sino un hábito.",
+  "author": "Aristóteles",
+  "authorSlug": "aristotle",
+  "category": "Ética y Virtud",
+  "categorySlug": "etica-virtud",
+  "mood": "bold",
+  "tags": [
+    "hábitos",
+    "excelencia",
+    "disciplina",
+    "virtud"
+  ],
+  "duration": 8,
+  "sourceWork": "Ética a Nicómaco",
+  "explanation": "La virtud y la maestría no se forjan en momentos de inspiración esporádica, sino en la forja silenciosa de la repetición constante. Nuestros hábitos diarios esculpen inexorablemente nuestro carácter y nuestro porvenir.",
+  "practicalInsight": "Escoge un buen hábito y practícalo hoy con rigor y devoción, sin importar lo pequeño que parezca.",
+  "reflectionPrompt": "¿Qué hábito diario define con mayor fuerza la persona en la que te estás convirtiendo?"
+}

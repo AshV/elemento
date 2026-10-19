@@ -1,0 +1,39 @@
+{
+  "slug": "jorge-luis-borges",
+  "name": "Jorge Luis Borges",
+  "longName": "Jorge Francisco Isidoro Luis Borges Acevedo",
+  "era": "1899 – 1986",
+  "tradition": "Literatura & Filosofía Argentina",
+  "wikipediaUrl": "https://es.wikipedia.org/wiki/Jorge_Luis_Borges",
+  "summary": "Escritor, poeta y ensayista argentino, maestro indiscutible de laberintos, espejos, paradojas y la infinitud del tiempo.",
+  "bio": "Nacido en Buenos Aires y formado en Ginebra y España, Borges deslumbró al mundo entero con ficciones breves y ensayos que combinaban la erudición teológica y filosófica con una deslumbrante precisión poética. Su ceguera progresiva transformó su mirada en un viaje hacia el universo interior de la memoria, los libros y la eternidad.",
+  "keyWorks": [
+    {
+      "title": "Ficciones",
+      "description": "Cuentos fundamentales que exploran el infinito, los laberintos, bibliotecas universales y destinos paralelos."
+    },
+    {
+      "title": "El Aleph",
+      "description": "Relatos sobre el punto que contiene todos los puntos del cosmos, el tiempo y la inmortalidad."
+    },
+    {
+      "title": "Otras inquisiciones",
+      "description": "Ensayos luminosos sobre literatura, tiempo, teología y metafísica."
+    }
+  ],
+  "pillars": [
+    {
+      "concept": "El universo como biblioteca",
+      "description": "El conocimiento y la memoria humana son un tejido infinito donde cada libro dialoga con todos los demás."
+    },
+    {
+      "concept": "La ilusión del tiempo",
+      "description": "El tiempo es un río que nos arrebata, pero nosotros somos ese río; somos el tiempo mismo."
+    },
+    {
+      "concept": "El asombro del lector",
+      "description": "Que otros se enorgullezcan por lo que han escrito; yo me enorgullezco por lo que he leído."
+    }
+  ],
+  "whyTimeless": "Borges convirtió las preguntas metafísicas más abstractas en deslumbrantes aventuras del intelecto y la emoción humana."
+}

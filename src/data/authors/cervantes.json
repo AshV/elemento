@@ -1,0 +1,35 @@
+{
+  "slug": "cervantes",
+  "name": "Miguel de Cervantes",
+  "longName": "Miguel de Cervantes Saavedra",
+  "era": "1547 – 1616",
+  "tradition": "Siglo de Oro Español & Humanismo",
+  "wikipediaUrl": "https://es.wikipedia.org/wiki/Miguel_de_Cervantes",
+  "summary": "Máxima figura de la literatura en lengua española, creador del Quijote y perspicaz observador del alma humana.",
+  "bio": "Nacido en Alcalá de Henares, Miguel de Cervantes fue soldado en la batalla de Lepanto, cautivo durante cinco años en Argel y funcionario en Andalucía antes de transformar la narrativa universal con Don Quijote de la Mancha. Su obra es un prodigio de humor, compasión, sabiduría vital e ironía que reconcilia el idealismo sublime con la realidad terrenal.",
+  "keyWorks": [
+    {
+      "title": "Don Quijote de la Mancha",
+      "description": "Obra cumbre de la literatura universal que explora el choque entre el ideal de justicia y la realidad del mundo."
+    },
+    {
+      "title": "Novelas ejemplares",
+      "description": "Colección de relatos breves que profundizan en las pasiones humanas, la libertad y la astucia."
+    }
+  ],
+  "pillars": [
+    {
+      "concept": "La libertad humana",
+      "description": "La libertad es uno de los dones más preciosos que a los hombres dieron los cielos; por ella se puede y debe aventurar la vida."
+    },
+    {
+      "concept": "El idealismo como deber",
+      "description": "Luchar por nobles ideales, aun cuando el mundo los califique de locura."
+    },
+    {
+      "concept": "La compasión irónica",
+      "description": "Comprender las flaquezas humanas con una sonrisa indulgente antes que con juicios implacables."
+    }
+  ],
+  "whyTimeless": "Cervantes nos enseñó que la bondad y el coraje de soñar con un mundo más justo son la mayor cordura a la que puede aspirar el ser humano."
+}

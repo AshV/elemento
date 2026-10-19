@@ -1,0 +1,20 @@
+{
+  "id": "q017",
+  "content": "La música es para el alma lo que la gimnasia para el cuerpo.",
+  "author": "Platón",
+  "authorSlug": "plato",
+  "category": "Paz Interior y Serenidad",
+  "categorySlug": "paz-interior",
+  "mood": "serene",
+  "tags": [
+    "arte",
+    "música",
+    "alma",
+    "armonía"
+  ],
+  "duration": 8,
+  "sourceWork": "La República",
+  "explanation": "Platón comprendió que la belleza estética y la armonía sonora afinan las cuerdas más delicadas del espíritu. Así como el ejercicio fortalece los músculos, el arte sublime purifica el alma y eleva la conciencia.",
+  "practicalInsight": "Permítete unos minutos de contemplación musical o artística sin distracciones para serenar tu mente.",
+  "reflectionPrompt": "¿Qué expresiones artísticas nutren y devuelven la serenidad a tu espíritu?"
+}

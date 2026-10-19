@@ -1,0 +1,20 @@
+{
+  "id": "q003",
+  "content": "El que lee mucho y anda mucho, ve mucho y sabe mucho.",
+  "author": "Miguel de Cervantes",
+  "authorSlug": "cervantes",
+  "category": "Conocimiento y Aprendizaje",
+  "categorySlug": "conocimiento-lectura",
+  "mood": "philosophical",
+  "tags": [
+    "lectura",
+    "experiencia",
+    "viajes",
+    "aprendizaje"
+  ],
+  "duration": 8,
+  "sourceWork": "Don Quijote de la Mancha",
+  "explanation": "Cervantes une con maestría el saber libresco con la experiencia viva de los caminos. La verdadera sabiduría no se agota en las páginas de una biblioteca ni en el mero viaje físico, sino en su íntima y reflexiva conjunción.",
+  "practicalInsight": "Busca hoy aprender algo nuevo en un libro y aplícalo de inmediato en una situación real con quienes te rodean.",
+  "reflectionPrompt": "¿De qué manera puedes abrirte hoy al mundo como un eterno aprendiz?"
+}

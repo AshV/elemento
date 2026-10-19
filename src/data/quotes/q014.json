@@ -1,0 +1,20 @@
+{
+  "id": "q014",
+  "content": "Caminante, no hay camino, se hace camino al andar.",
+  "author": "Antonio Machado",
+  "authorSlug": "antonio-machado",
+  "category": "El Tiempo y la Vida",
+  "categorySlug": "tiempo-vida",
+  "mood": "reflective",
+  "tags": [
+    "destino",
+    "vida",
+    "caminar",
+    "poesía"
+  ],
+  "duration": 8,
+  "sourceWork": "Campos de Castilla",
+  "explanation": "Machado captura la verdad más honda de la libertad humana: no existen sendas prefijadas por el destino. Cada paso que damos con autenticidad y rectitud va trazando la senda irrepetible de nuestra propia vida.",
+  "practicalInsight": "Confía en tu propia intuición y no esperes a que otros te marquen el camino a seguir.",
+  "reflectionPrompt": "¿Qué senda personal y auténtica estás construyendo con tus elecciones diarias?"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "q010",
+  "content": "Yo soy yo y mi circunstancia, y si no la salvo a ella no me salvo yo.",
+  "author": "José Ortega y Gasset",
+  "authorSlug": "ortega-y-gasset",
+  "category": "Sabiduría y Filosofía",
+  "categorySlug": "sabiduria-filosofia",
+  "mood": "philosophical",
+  "tags": [
+    "circunstancia",
+    "responsabilidad",
+    "existencia",
+    "compromiso"
+  ],
+  "duration": 8,
+  "sourceWork": "Meditaciones del Quijote",
+  "explanation": "Ortega nos recuerda que no existimos en el vacío: nuestra identidad está entrelazada con el mundo, la sociedad y el tiempo en que vivimos. Solo comprometiéndonos activamente a mejorar nuestro entorno alcanzamos nuestra propia plenitud.",
+  "practicalInsight": "Identifica un problema en tu entorno cercano y haz algo concreto hoy para contribuir a su solución.",
+  "reflectionPrompt": "¿Cómo puedes transformar positivamente las circunstancias que hoy te rodean?"
+}

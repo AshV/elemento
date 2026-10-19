@@ -1,0 +1,39 @@
+{
+  "slug": "seneca",
+  "name": "Séneca",
+  "longName": "Lucio Anneo Séneca",
+  "era": "c. 4 a.C. – 65 d.C.",
+  "tradition": "Estoicismo Romano",
+  "wikipediaUrl": "https://es.wikipedia.org/wiki/S%C3%A9neca",
+  "summary": "Filósofo, político y dramaturgo hispanorromano, maestro supremo de la sabiduría práctica y el dominio del tiempo.",
+  "bio": "Nacido en Córdoba (Hispania) y educado en Roma, Lucio Anneo Séneca fue uno de los más insignes oradores del Senado romano y preceptor del emperador Nerón. Sus tratados morales y sus Epístolas a Lucilio constituyen una guía indispensable para afrontar la adversidad, gobernar las pasiones y vivir con serenidad y templanza.",
+  "keyWorks": [
+    {
+      "title": "Cartas a Lucilio (Epistulae Morales)",
+      "description": "Conjunto de 124 epístolas sobre la serenidad, la amistad, la muerte, el autodominio y el valor del tiempo."
+    },
+    {
+      "title": "De la brevedad de la vida (De Brevitate Vitae)",
+      "description": "Magistral ensayo que demuestra que la vida no es corta, sino que desperdiciamos la mayor parte de ella."
+    },
+    {
+      "title": "De la tranquilidad del ánimo (De Tranquillitate Animi)",
+      "description": "Diálogo terapéutico sobre cómo superar la inquietud existencial y encontrar la paz interior."
+    }
+  ],
+  "pillars": [
+    {
+      "concept": "La soberanía del tiempo",
+      "description": "El tiempo es el único bien irreemplazable; debemos custodiarlo con más celo que el oro."
+    },
+    {
+      "concept": "Premeditatio Malorum",
+      "description": "Anticipar las dificultades para que ninguna adversidad nos tome desprevenidos."
+    },
+    {
+      "concept": "La autosuficiencia interior",
+      "description": "Quien menos necesita de la fortuna es verdaderamente libre y soberano de sí mismo."
+    }
+  ],
+  "whyTimeless": "Séneca no escribe desde una torre de marfil, sino como un hombre en la arena del mundo que nos enseña a mantener la nobleza y la serenidad frente a cualquier tormenta."
+}

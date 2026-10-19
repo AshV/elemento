@@ -1,0 +1,212 @@
+[
+  {
+    "day": 1,
+    "id": "q001",
+    "author": "Séneca",
+    "content": "No nos atrevemos a muchas cosas porque son difíciles; son difíciles porque no nos atrevemos."
+  },
+  {
+    "day": 2,
+    "id": "q002",
+    "author": "Marco Aurelio",
+    "content": "La felicidad de tu vida depende de la calidad de tus pensamientos."
+  },
+  {
+    "day": 3,
+    "id": "q003",
+    "author": "Miguel de Cervantes",
+    "content": "El que lee mucho y anda mucho, ve mucho y sabe mucho."
+  },
+  {
+    "day": 4,
+    "id": "q004",
+    "author": "Jorge Luis Borges",
+    "content": "De todos los instrumentos del hombre, el más asombroso es el libro; los demás son extensiones de su cuerpo, pero el libro es una extensión de la memoria y la imaginación."
+  },
+  {
+    "day": 5,
+    "id": "q005",
+    "author": "Séneca",
+    "content": "No es pobre el que tiene poco, sino el que mucho desea."
+  },
+  {
+    "day": 6,
+    "id": "q006",
+    "author": "Marco Aurelio",
+    "content": "Cuando te levantes por la mañana, piensa en el precioso privilegio de estar vivo: respirar, pensar, disfrutar, amar."
+  },
+  {
+    "day": 7,
+    "id": "q007",
+    "author": "Baltasar Gracián",
+    "content": "El saber y el valor van a una; como son grandes, hacen inmortales."
+  },
+  {
+    "day": 8,
+    "id": "q008",
+    "author": "Epicteto",
+    "content": "No son las cosas que nos pasan las que nos hacen sufrir, sino lo que nos decimos sobre esas cosas."
+  },
+  {
+    "day": 9,
+    "id": "q009",
+    "author": "Miguel de Cervantes",
+    "content": "La libertad, Sancho, es uno de los más preciosos dones que a los hombres dieron los cielos; con ella no pueden igualarse los tesoros que encierra la tierra ni el mar encubre."
+  },
+  {
+    "day": 10,
+    "id": "q010",
+    "author": "José Ortega y Gasset",
+    "content": "Yo soy yo y mi circunstancia, y si no la salvo a ella no me salvo yo."
+  },
+  {
+    "day": 11,
+    "id": "q011",
+    "author": "Confucio",
+    "content": "Saber lo que es justo y no hacerlo es la peor de las cobardías."
+  },
+  {
+    "day": 12,
+    "id": "q012",
+    "author": "Gautama Buda",
+    "content": "La paz viene de adentro. No la busques afuera."
+  },
+  {
+    "day": 13,
+    "id": "q013",
+    "author": "Lao Tse",
+    "content": "Un viaje de mil millas comienza con un solo paso."
+  },
+  {
+    "day": 14,
+    "id": "q014",
+    "author": "Antonio Machado",
+    "content": "Caminante, no hay camino, se hace camino al andar."
+  },
+  {
+    "day": 15,
+    "id": "q015",
+    "author": "Viktor Frankl",
+    "content": "Al hombre se le puede arrebatar todo salvo una cosa: la última de las libertades humanas, la elección de la actitud personal ante cualquier circunstancia."
+  },
+  {
+    "day": 16,
+    "id": "q016",
+    "author": "Friedrich Nietzsche",
+    "content": "Aquel que tiene un porqué para vivir se puede enfrentar a todos los cómos."
+  },
+  {
+    "day": 17,
+    "id": "q017",
+    "author": "Platón",
+    "content": "La música es para el alma lo que la gimnasia para el cuerpo."
+  },
+  {
+    "day": 18,
+    "id": "q018",
+    "author": "Aristóteles",
+    "content": "Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, sino un hábito."
+  },
+  {
+    "day": 19,
+    "id": "q019",
+    "author": "Jorge Luis Borges",
+    "content": "He cometido el peor de los pecados que un hombre puede cometer: no he sido feliz."
+  },
+  {
+    "day": 20,
+    "id": "q020",
+    "author": "Octavio Paz",
+    "content": "El amor es una apuesta en la que nos jugamos la vida entera."
+  },
+  {
+    "day": 21,
+    "id": "q021",
+    "author": "Calderón de la Barca",
+    "content": "¿Qué es la vida? Un frenesí. ¿Qué es la vida? Una ilusión, una sombra, una ficción; y el mayor bien es pequeño: que toda la vida es sueño, y los sueños, sueños son."
+  },
+  {
+    "day": 22,
+    "id": "q022",
+    "author": "Séneca",
+    "content": "Largo es el camino de la enseñanza por medio de teorías; breve y eficaz por medio de ejemplos."
+  },
+  {
+    "day": 23,
+    "id": "q023",
+    "author": "Marco Aurelio",
+    "content": "El mejor modo de vengarse de un enemigo es no asemejarse a él."
+  },
+  {
+    "day": 24,
+    "id": "q024",
+    "author": "Baltasar Gracián",
+    "content": "Lo bueno, si breve, dos veces bueno; y aun lo malo, si poco, no tan malo."
+  },
+  {
+    "day": 25,
+    "id": "q025",
+    "author": "Epicteto",
+    "content": "Solo hay un camino hacia la felicidad y es dejar de preocuparse por cosas que están más allá del poder de nuestra voluntad."
+  },
+  {
+    "day": 26,
+    "id": "q026",
+    "author": "Miguel de Unamuno",
+    "content": "El fin de la vida es vivir, no pensar en ella."
+  },
+  {
+    "day": 27,
+    "id": "q027",
+    "author": "Federico García Lorca",
+    "content": "Desechad tristezas y melancolías. La vida es amable, tiene pocos días y tan sólo ahora la hemos de gozar."
+  },
+  {
+    "day": 28,
+    "id": "q028",
+    "author": "Confucio",
+    "content": "Nuestra mayor gloria no está en no caer nunca, sino en levantarnos cada vez que caemos."
+  },
+  {
+    "day": 29,
+    "id": "q029",
+    "author": "Gautama Buda",
+    "content": "El dolor es inevitable, pero el sufrimiento es opcional."
+  },
+  {
+    "day": 30,
+    "id": "q030",
+    "author": "Séneca",
+    "content": "La vida es como una obra de teatro: lo que importa no es cuánto dure, sino lo bien que haya sido representada."
+  },
+  {
+    "day": 31,
+    "id": "q031",
+    "author": "Jorge Luis Borges",
+    "content": "Siempre imaginé que el Paraíso sería algún tipo de biblioteca."
+  },
+  {
+    "day": 32,
+    "id": "q032",
+    "author": "Lao Tse",
+    "content": "Quien vence a otros es fuerte; quien se vence a sí mismo es poderoso."
+  },
+  {
+    "day": 33,
+    "id": "q033",
+    "author": "Aristóteles",
+    "content": "Educar la mente sin educar el corazón no es educar en absoluto."
+  },
+  {
+    "day": 34,
+    "id": "q034",
+    "author": "Gabriel García Márquez",
+    "content": "No hay medicina que cure lo que no cura la felicidad."
+  },
+  {
+    "day": 35,
+    "id": "q035",
+    "author": "Séneca",
+    "content": "La ira es un ácido que puede hacer más daño al recipiente en el que se almacena que a cualquier cosa sobre la que se vierte."
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "slug": "marcus-aurelius",
+  "name": "Marco Aurelio",
+  "longName": "Marco Aurelio Antonino Augusto",
+  "era": "121 – 180 d.C.",
+  "tradition": "Estoicismo Romano",
+  "wikipediaUrl": "https://es.wikipedia.org/wiki/Marco_Aurelio",
+  "summary": "Emperador romano y filósofo estoico, célebre por sus reflexiones íntimas sobre el deber, la humildad y la fortaleza mental.",
+  "bio": "Gobernante del Imperio Romano en el cenit de su poderío, Marco Aurelio consagró sus noches en los campamentos de campaña a escribir sus Meditaciones, un diario personal y espiritual dirigido a sí mismo. Su filosofía encarna el ideal del rey-filósofo platónico: poder absoluto ejercido con templanza, sentido del deber y desdén por la vanidad.",
+  "keyWorks": [
+    {
+      "title": "Meditaciones (Pensamientos para sí mismo)",
+      "description": "Diario íntimo de ejercicios espirituales sobre la impermanencia, el autodominio y el bien común."
+    }
+  ],
+  "pillars": [
+    {
+      "concept": "La ciudadela interior",
+      "description": "El alma posee un refugio inexpugnable donde ninguna circunstancia externa puede penetrar sin nuestro consentimiento."
+    },
+    {
+      "concept": "Amor Fati",
+      "description": "Aceptar con serenidad el destino y transformar cada contratiempo en una oportunidad para la virtud."
+    },
+    {
+      "concept": "Cosmopolitismo",
+      "description": "Somos miembros de una misma comunidad humana; obrar contra el prójimo es obrar contra uno mismo."
+    }
+  ],
+  "whyTimeless": "Sus palabras nos recuerdan que la verdadera nobleza no reside en el título ni en el poder exterior, sino en la rectitud y la calma de nuestros propios pensamientos."
+}

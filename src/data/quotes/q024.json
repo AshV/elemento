@@ -1,0 +1,20 @@
+{
+  "id": "q024",
+  "content": "Lo bueno, si breve, dos veces bueno; y aun lo malo, si poco, no tan malo.",
+  "author": "Baltasar Gracián",
+  "authorSlug": "baltasar-gracian",
+  "category": "Conocimiento y Aprendizaje",
+  "categorySlug": "conocimiento-lectura",
+  "mood": "philosophical",
+  "tags": [
+    "concisión",
+    "prudencia",
+    "elocuencia",
+    "claridad"
+  ],
+  "duration": 8,
+  "sourceWork": "Oráculo manual y arte de prudencia",
+  "explanation": "El aforismo más célebre de Gracián celebra el don de la concisión y la precisión. La verdadera agudeza mental sabe decir mucho con pocas palabras, ahorrando tiempo y destilando la esencia de las ideas.",
+  "practicalInsight": "Comunícate hoy con claridad y concisión, eliminando palabras superfluas en tus mensajes.",
+  "reflectionPrompt": "¿De qué manera la sencillez puede darle mayor fuerza a tus expresiones?"
+}

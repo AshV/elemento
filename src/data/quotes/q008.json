@@ -1,0 +1,20 @@
+{
+  "id": "q008",
+  "content": "No son las cosas que nos pasan las que nos hacen sufrir, sino lo que nos decimos sobre esas cosas.",
+  "author": "Epicteto",
+  "authorSlug": "epictetus",
+  "category": "Sabiduría y Filosofía",
+  "categorySlug": "sabiduria-filosofia",
+  "mood": "reflective",
+  "tags": [
+    "estoicismo",
+    "autocontrol",
+    "mente",
+    "percepción"
+  ],
+  "duration": 8,
+  "sourceWork": "Enquiridión",
+  "explanation": "La piedra angular del estoicismo de Epicteto: los acontecimientos son moralmente neutros; el sufrimiento o la paz nacen de nuestro propio juicio y del significado que decidimos atribuirles.",
+  "practicalInsight": "Ante un contratiempo, pregúntate: ¿esto daña mi carácter o solo desafía mis expectativas?",
+  "reflectionPrompt": "¿Qué relato mental te está causando dolor innecesario en este momento?"
+}

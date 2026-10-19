@@ -1,0 +1,91 @@
+---
+import { getCollection } from 'astro:content';
+import { BaseLayout, ReelFeed, slugifyQuote, resolvePath, resolveCanonicalUrl } from 'wisdom';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const allQuotes = await getCollection('quotes');
+  const quotesData = allQuotes.map((q) => q.data);
+
+  const quotesByCategory: Record<string, any[]> = {};
+  const quotesByMood: Record<string, any[]> = {};
+
+  for (const q of quotesData) {
+    if (!quotesByCategory[q.categorySlug]) quotesByCategory[q.categorySlug] = [];
+    quotesByCategory[q.categorySlug].push(q);
+    if (!quotesByMood[q.mood]) quotesByMood[q.mood] = [];
+    quotesByMood[q.mood].push(q);
+  }
+
+  return quotesData.map((quote) => {
+    const textSlug = slugifyQuote(quote.content);
+    const sameCat = quotesByCategory[quote.categorySlug] || [];
+    const sameMood = quotesByMood[quote.mood] || [];
+    const buffer = [...sameCat, ...sameMood].filter((q) => q.id !== quote.id).slice(0, 3);
+
+    return {
+      params: { slug: textSlug },
+      props: {
+        targetQuote: quote,
+        feedQuotes: [quote, ...buffer],
+      },
+    };
+  });
+};
+
+interface Props {
+  targetQuote: any;
+  feedQuotes: any[];
+}
+
+const { targetQuote, feedQuotes } = Astro.props;
+const { content, author, authorSlug, category, tags } = targetQuote;
+
+const textSlug = slugifyQuote(content);
+const canonicalUrl = resolvePath(`quote/${textSlug}/`);
+
+const title = `«${content}» — ${author} | Elemento`;
+const description = `«${content}» — Sabiduría de ${author} sobre ${category}. Léela y compártela en Elemento.`;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Quotation',
+  headline: `Pensamiento de ${author}`,
+  text: content,
+  inLanguage: 'es',
+  creator: {
+    '@type': 'Person',
+    name: author,
+  },
+  keywords: (tags || []).join(', '),
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Elemento',
+    url: resolveCanonicalUrl('', Astro.site?.origin),
+  },
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang="es"
+  ogType="article"
+  robots="noindex, follow, max-image-preview:large"
+  keywords={[...(tags || []), author, category, 'Elemento', 'citas célebres', 'sabiduría']}
+  breadcrumbs={[
+    { name: 'Autores', url: resolvePath('author/') },
+    { name: author, url: resolvePath(`author/${authorSlug}/`) },
+    { name: `«${content.slice(0, 30)}...»`, url: canonicalUrl },
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+  <ReelFeed
+    quotes={feedQuotes}
+    feedTitle={`Pensamiento de ${author}`}
+    feedType="quote"
+    matchedCount={1}
+    lang="es"
+  />
+</BaseLayout>

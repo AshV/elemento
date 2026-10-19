@@ -1,0 +1,20 @@
+{
+  "id": "q013",
+  "content": "Un viaje de mil millas comienza con un solo paso.",
+  "author": "Lao Tse",
+  "authorSlug": "lao-tzu",
+  "category": "Coraje y Determinación",
+  "categorySlug": "coraje-accion",
+  "mood": "motivational",
+  "tags": [
+    "comienzo",
+    "paciencia",
+    "progreso",
+    "constancia"
+  ],
+  "duration": 8,
+  "sourceWork": "Tao Te King",
+  "explanation": "Las más grandes transformaciones y las obras más monumentales no nacen de hazañas repentinas, sino de la acumulación silenciosa de pequeños actos cotidianos. Lo único indispensable es tener la humildad de empezar.",
+  "practicalInsight": "No te abrumes por la magnitud de tus sueños: realiza hoy una pequeña acción concreta en esa dirección.",
+  "reflectionPrompt": "¿Qué primer paso has postergado que podrías dar ahora mismo?"
+}

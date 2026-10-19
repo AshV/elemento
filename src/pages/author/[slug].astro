@@ -1,0 +1,131 @@
+---
+/**
+ * Página de Autor (Author Hub Page) — Elemento
+ */
+import { BaseLayout, ReelFeed, resolvePath, resolveCanonicalUrl } from 'wisdom';
+import { getCollection } from 'astro:content';
+import { getAuthorProfile } from 'wisdom';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const allQuotes = await getCollection('quotes');
+  const quotesData = allQuotes.map((q) => q.data);
+  const slugs = [...new Set(quotesData.map((q) => q.authorSlug))];
+
+  return slugs.map((slug) => {
+    const matched = quotesData.filter((q) => q.authorSlug === slug);
+    const remaining = quotesData.filter((q) => q.authorSlug !== slug);
+    const authorName = matched[0]?.author || slug;
+    return {
+      params: { slug },
+      props: {
+        quotes: [...matched, ...remaining.slice(0, 15)],
+        matchedCount: matched.length,
+        authorName,
+      },
+    };
+  });
+};
+
+interface Props {
+  quotes: any[];
+  matchedCount: number;
+  authorName: string;
+}
+
+const { slug } = Astro.params;
+const { quotes, matchedCount, authorName } = Astro.props;
+
+const profile = getAuthorProfile(slug!, authorName, 'es');
+
+const pageTitle = `Citas y Filosofía de ${profile.name} — Elemento`;
+const pageDescription = `Descubre ${matchedCount}+ citas célebres, pensamientos y reflexiones de ${profile.name} (${profile.era}), ${profile.tradition}.`;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: pageTitle,
+  description: profile.summary,
+  url: resolveCanonicalUrl(`author/${slug}/`, Astro.site?.origin),
+  inLanguage: 'es',
+  about: {
+    '@type': 'Person',
+    name: profile.name,
+    alternateName: profile.longName !== profile.name ? profile.longName : undefined,
+    description: profile.bio,
+    sameAs: profile.wikipediaUrl,
+    image: profile.photo ? (profile.photo.startsWith('http') ? profile.photo : resolveCanonicalUrl(profile.photo.replace(/^\/+/, ''), Astro.site?.origin)) : undefined,
+    knowsAbout: [profile.tradition, ...profile.pillars.map((p) => p.concept)],
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: matchedCount,
+    itemListElement: quotes.slice(0, 30).map((q, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      item: {
+        '@type': 'Quotation',
+        text: q.content,
+        creator: {
+          '@type': 'Person',
+          name: profile.name,
+        },
+      },
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  lang="es"
+  robots="index, follow, max-image-preview:large"
+  keywords={[
+    `citas de ${profile.name}`,
+    `pensamientos de ${profile.name}`,
+    profile.tradition,
+    ...profile.pillars.map((p) => p.concept),
+    'Elemento',
+    'citas célebres',
+    'filosofía en español',
+  ]}
+  breadcrumbs={[
+    { name: 'Autores', url: resolvePath('author/') },
+    { name: profile.name, url: resolvePath(`author/${slug}/`) },
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+  <!-- Semantic Hidden-to-Viewers Fallback Block for SEO -->
+  <article class="sr-only" itemscope itemtype="https://schema.org/Person">
+    <h1 itemprop="name">{profile.name}</h1>
+    <p><strong>Época histórica:</strong> {profile.era}</p>
+    <p><strong>Tradición filosófica:</strong> {profile.tradition}</p>
+    <div itemprop="description">
+      <p>{profile.bio}</p>
+      <h2>Pilares filosóficos</h2>
+      <ul>
+        {profile.pillars.map((p) => (
+          <li><strong>{p.concept}:</strong> {p.description}</li>
+        ))}
+      </ul>
+      <h2>Obras esenciales</h2>
+      <ul>
+        {profile.keyWorks.map((w) => (
+          <li><strong>{w.title}:</strong> {w.description}</li>
+        ))}
+      </ul>
+      <p>{profile.whyTimeless}</p>
+    </div>
+  </article>
+
+  <ReelFeed
+    quotes={quotes}
+    matchedCount={matchedCount}
+    filterLabel={`Citas de ${profile.name}`}
+    feedTitle={`✏️ ${profile.shortName || profile.name}`}
+    feedType="author"
+    lang="es"
+  />
+</BaseLayout>

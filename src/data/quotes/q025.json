@@ -1,0 +1,20 @@
+{
+  "id": "q025",
+  "content": "Solo hay un camino hacia la felicidad y es dejar de preocuparse por cosas que están más allá del poder de nuestra voluntad.",
+  "author": "Epicteto",
+  "authorSlug": "epictetus",
+  "category": "Paz Interior y Serenidad",
+  "categorySlug": "paz-interior",
+  "mood": "serene",
+  "tags": [
+    "dicotomía-del-control",
+    "felicidad",
+    "serenidad",
+    "estoicismo"
+  ],
+  "duration": 8,
+  "sourceWork": "Enquiridión",
+  "explanation": "La dicotomía del control de Epicteto nos enseña a concentrar toda nuestra energía en lo que de nosotros depende (nuestros pensamientos, impulsos y decisiones) y aceptar con calma todo lo demás.",
+  "practicalInsight": "Distingue hoy en cada problema qué parte depende de ti y enfócate en ella, soltando el resto.",
+  "reflectionPrompt": "¿Cuánta energía estás gastando en querer controlar cosas que no dependen de ti?"
+}

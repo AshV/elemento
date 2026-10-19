@@ -1,0 +1,57 @@
+---
+/**
+ * Página de Estado de Ánimo (Mood Feed) — Elemento
+ */
+import { BaseLayout, ReelFeed, getLocalizedMoodMeta, allMoods, resolvePath } from 'wisdom';
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const allQuotes = await getCollection('quotes');
+  const quotesData = allQuotes.map((q) => q.data);
+
+  return allMoods.map((mood) => {
+    const matched = quotesData.filter((q) => q.mood === mood);
+    const remaining = quotesData.filter((q) => q.mood !== mood);
+    const { label, emoji } = getLocalizedMoodMeta(mood, 'es');
+    return {
+      params: { slug: mood },
+      props: {
+        quotes: [...matched, ...remaining.slice(0, 15)],
+        matchedCount: matched.length,
+        moodLabel: label,
+        moodEmoji: emoji,
+      },
+    };
+  });
+};
+
+interface Props {
+  quotes: any[];
+  matchedCount: number;
+  moodLabel: string;
+  moodEmoji: string;
+}
+
+const { slug } = Astro.params;
+const { quotes, matchedCount, moodLabel, moodEmoji } = Astro.props;
+---
+<BaseLayout
+  title={`${moodEmoji} Citas ${moodLabel} — Elemento`}
+  description={`Pensamientos y reflexiones ${moodLabel.toLowerCase()} para cultivar la mente y el espíritu.`}
+  lang="es"
+  keywords={[`citas ${moodLabel.toLowerCase()}`, moodLabel, 'Elemento', 'estados de ánimo', 'reflexión', 'sabiduría']}
+  breadcrumbs={[
+    { name: 'Estados de ánimo', url: resolvePath('') },
+    { name: `${moodEmoji} ${moodLabel}`, url: resolvePath(`mood/${slug}/`) },
+  ]}
+>
+  <ReelFeed
+    quotes={quotes}
+    matchedCount={matchedCount}
+    filterLabel={`${moodEmoji} Reflexión ${moodLabel}`}
+    feedTitle={`${moodEmoji} ${moodLabel}`}
+    feedType="mood"
+    lang="es"
+  />
+</BaseLayout>

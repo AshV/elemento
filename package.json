@@ -1,0 +1,27 @@
+{
+  "name": "elemento",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Sitio de citas célebres y reflexiones atemporales en español impulsado por el tema Wisdom",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.10",
+    "firebase": "^12.19.0",
+    "html-to-image": "^1.11.13",
+    "tailwindcss": "^4.3.3",
+    "wisdom": "file:../wisdom"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

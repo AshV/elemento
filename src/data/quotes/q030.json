@@ -1,0 +1,20 @@
+{
+  "id": "q030",
+  "content": "La vida es como una obra de teatro: lo que importa no es cuánto dure, sino lo bien que haya sido representada.",
+  "author": "Séneca",
+  "authorSlug": "seneca",
+  "category": "El Tiempo y la Vida",
+  "categorySlug": "tiempo-vida",
+  "mood": "reflective",
+  "tags": [
+    "vida",
+    "sentido",
+    "calidad",
+    "estoicismo"
+  ],
+  "duration": 8,
+  "sourceWork": "Cartas a Lucilio",
+  "explanation": "La medida de una vida plena no radica en la cantidad de años acumulados, sino en la intensidad de su virtud, la rectitud de su propósito y la nobleza de sus afectos. Vivir con excelencia un solo día vale más que cien años de apatía.",
+  "practicalInsight": "Vive las horas de hoy con el esmero de quien está interpretando su mejor papel vital.",
+  "reflectionPrompt": "Si tu vida fuera recordada por tus actos de esta semana, ¿qué historia contaría?"
+}

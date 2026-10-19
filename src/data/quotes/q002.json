@@ -1,0 +1,20 @@
+{
+  "id": "q002",
+  "content": "La felicidad de tu vida depende de la calidad de tus pensamientos.",
+  "author": "Marco Aurelio",
+  "authorSlug": "marcus-aurelius",
+  "category": "Sabiduría y Filosofía",
+  "categorySlug": "sabiduria-filosofia",
+  "mood": "reflective",
+  "tags": [
+    "mente",
+    "felicidad",
+    "pensamientos",
+    "serenidad"
+  ],
+  "duration": 8,
+  "sourceWork": "Meditaciones",
+  "explanation": "El emperador filósofo nos enseña que el mundo exterior no tiene acceso directo a nuestra paz interior. No son los hechos los que nos turban, sino el juicio, la narrativa y la interpretación que construimos sobre ellos.",
+  "practicalInsight": "Cuando sientas agobio o frustración, detente a observar la interpretación que estás haciendo y cámbiala por una más constructiva y serena.",
+  "reflectionPrompt": "¿Qué pensamiento recurrente en tu mente merece ser reemplazado por uno más bondadoso y pacífico?"
+}

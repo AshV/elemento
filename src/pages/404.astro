@@ -1,0 +1,73 @@
+---
+import { BaseLayout, getBaseUrl } from "wisdom";
+import { getCollection } from "astro:content";
+
+const allQuotes = await getCollection("quotes");
+const totalQuotes = allQuotes.length;
+const base = getBaseUrl().replace(/\/$/, "");
+---
+
+<BaseLayout
+  title="Página no encontrada (404) | Elemento"
+  description="Quizá la reflexión que buscas se encuentra en otro camino del pensamiento."
+  lang="es"
+  robots="noindex, nofollow"
+>
+  <script is:inline define:vars={{ totalQuotes, base }}>
+    (function () {
+      try {
+        const rawPath = window.location.pathname.replace(/\/+$/, "");
+        const escBase = base ? base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") : "";
+        const match = rawPath.match(new RegExp("^(?:" + escBase + ")?/(?:quote/)?q?(\\d+)$", "i"));
+
+        if (match && match[1]) {
+          const num = parseInt(match[1], 10);
+          if (num >= 1 && num <= totalQuotes) {
+            document.documentElement.classList.add("is-resolving-quote");
+            const paddedId = "q" + String(num).padStart(num >= 1000 ? 4 : 3, "0");
+            window.location.replace(`${base}/#${paddedId}`);
+          }
+        }
+      } catch (err) {
+        console.warn("[Elemento 404 Resolver] Error:", err);
+      }
+    })();
+  </script>
+
+  <div class="relative min-h-[100dvh] w-full flex flex-col items-center justify-center p-4 sm:p-6 select-none z-10">
+    <div
+      id="error-404-container"
+      class="flex flex-col items-center justify-center text-center max-w-xl w-full p-6 sm:p-10 rounded-3xl bg-black/40 backdrop-blur-3xl border border-white/10 shadow-[0_20px_70px_rgba(0,0,0,0.8)]"
+    >
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-amber-300 text-xs font-semibold tracking-wider uppercase mb-6 shadow-sm">
+        <span>✦</span>
+        <span>Página no encontrada</span>
+        <span>✦</span>
+      </div>
+
+      <div class="relative my-2 select-none pointer-events-none">
+        <span class="text-7xl sm:text-9xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white/30 via-white/10 to-transparent">
+          404
+        </span>
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">
+        Este sendero aún no ha sido escrito
+      </h1>
+
+      <p class="text-sm sm:text-base text-white/70 max-w-md mb-8 leading-relaxed font-light">
+        En el fluir del tiempo, algunas páginas permanecen ocultas. Puedes regresar al canal principal para seguir contemplando reflexiones eternas.
+      </p>
+
+      <a
+        href={`${base}/`}
+        class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-amber-300 text-neutral-950 hover:bg-amber-200 transition-all font-semibold text-sm shadow-lg shadow-amber-400/20 active:scale-95"
+      >
+        <span>Volver al inicio</span>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</BaseLayout>

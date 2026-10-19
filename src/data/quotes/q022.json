@@ -1,0 +1,20 @@
+{
+  "id": "q022",
+  "content": "Largo es el camino de la enseñanza por medio de teorías; breve y eficaz por medio de ejemplos.",
+  "author": "Séneca",
+  "authorSlug": "seneca",
+  "category": "Conocimiento y Aprendizaje",
+  "categorySlug": "conocimiento-lectura",
+  "mood": "reflective",
+  "tags": [
+    "ejemplo",
+    "coherencia",
+    "enseñanza",
+    "acción"
+  ],
+  "duration": 8,
+  "sourceWork": "Cartas a Lucilio",
+  "explanation": "Las palabras conmueven, pero el ejemplo arrastra. Ninguna lección moral tiene tanto impacto transformador como la coherencia viva de quien practica lo que predica sin ostentación.",
+  "practicalInsight": "En lugar de aconsejar a otros lo que deben hacer, sé hoy el modelo vivo de esa virtud.",
+  "reflectionPrompt": "¿Tus acciones cotidianas reflejan con claridad los valores que profesas?"
+}

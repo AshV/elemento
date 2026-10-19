@@ -1,0 +1,20 @@
+{
+  "id": "q007",
+  "content": "El saber y el valor van a una; como son grandes, hacen inmortales.",
+  "author": "Baltasar Gracián",
+  "authorSlug": "baltasar-gracian",
+  "category": "Coraje y Determinación",
+  "categorySlug": "coraje-accion",
+  "mood": "bold",
+  "tags": [
+    "sabiduría",
+    "valor",
+    "nobleza",
+    "excelencia"
+  ],
+  "duration": 8,
+  "sourceWork": "El Discreto",
+  "explanation": "Gracián sostiene que la inteligencia sin valor es inerte, y el valor sin entendimiento es temeridad ciega. Cuando el conocimiento lúcido se une a la audacia del corazón, la persona alcanza una grandeza que trasciende su tiempo.",
+  "practicalInsight": "No te limites a saber qué es lo correcto: ten el valor moral de defenderlo hoy en tus acciones.",
+  "reflectionPrompt": "¿En qué ámbito de tu vida necesitas sumar más audacia a lo que ya sabes que debes hacer?"
+}

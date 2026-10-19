@@ -1,0 +1,64 @@
+---
+/**
+ * Página de Etiqueta (Tag Feed) — Elemento
+ */
+import { BaseLayout, ReelFeed, resolvePath } from 'wisdom';
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const allQuotes = await getCollection('quotes');
+  const quotesData = allQuotes.map((q) => q.data);
+
+  const quotesByTag: Record<string, any[]> = {};
+  for (const q of quotesData) {
+    for (const tag of (q.tags || [])) {
+      if (!quotesByTag[tag]) quotesByTag[tag] = [];
+      quotesByTag[tag].push(q);
+    }
+  }
+
+  const tags = Object.keys(quotesByTag);
+
+  return tags.map((tag) => {
+    const matched = quotesByTag[tag];
+    return {
+      params: { slug: tag },
+      props: {
+        quotes: matched.slice(0, 30),
+        matchedCount: matched.length,
+        tagName: tag,
+      },
+    };
+  });
+};
+
+interface Props {
+  quotes: any[];
+  matchedCount: number;
+  tagName: string;
+}
+
+const { slug } = Astro.params;
+const { quotes, matchedCount, tagName } = Astro.props;
+---
+<BaseLayout
+  title={`#${tagName} — Citas y Pensamientos | Elemento`}
+  description={`Explora citas célebres y reflexiones atemporales etiquetadas con #${tagName} en Elemento.`}
+  lang="es"
+  robots="noindex, follow"
+  keywords={[`#${tagName}`, `citas sobre ${tagName}`, tagName, 'Elemento', 'pensamientos']}
+  breadcrumbs={[
+    { name: 'Etiquetas', url: resolvePath('') },
+    { name: `#${tagName}`, url: resolvePath(`tag/${slug}/`) },
+  ]}
+>
+  <ReelFeed
+    quotes={quotes}
+    matchedCount={matchedCount}
+    filterLabel={`#${tagName}`}
+    feedTitle={`#${tagName}`}
+    feedType="tag"
+    lang="es"
+  />
+</BaseLayout>

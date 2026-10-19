@@ -1,0 +1,20 @@
+{
+  "id": "q001",
+  "content": "No nos atrevemos a muchas cosas porque son difíciles; son difíciles porque no nos atrevemos.",
+  "author": "Séneca",
+  "authorSlug": "seneca",
+  "category": "Coraje y Determinación",
+  "categorySlug": "coraje-accion",
+  "mood": "motivational",
+  "tags": [
+    "coraje",
+    "superación",
+    "estoicismo",
+    "determinación"
+  ],
+  "duration": 8,
+  "sourceWork": "Cartas a Lucilio",
+  "explanation": "Séneca advierte que el miedo y la vacilación magnifican los obstáculos. Los límites de lo posible a menudo no son físicos, sino barreras autoimpuestas por la mente antes de haber intentado dar el primer paso.",
+  "practicalInsight": "Elige hoy una tarea o conversación difícil que hayas postergado por temor y da el primer paso con firmeza.",
+  "reflectionPrompt": "¿Qué gran meta te propondrías si supieras de antemano que el fracaso no es definitivo?"
+}

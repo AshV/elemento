@@ -1,0 +1,20 @@
+{
+  "id": "q009",
+  "content": "La libertad, Sancho, es uno de los más preciosos dones que a los hombres dieron los cielos; con ella no pueden igualarse los tesoros que encierra la tierra ni el mar encubre.",
+  "author": "Miguel de Cervantes",
+  "authorSlug": "cervantes",
+  "category": "Ética y Virtud",
+  "categorySlug": "etica-virtud",
+  "mood": "bold",
+  "tags": [
+    "libertad",
+    "dignidad",
+    "nobleza",
+    "justicia"
+  ],
+  "duration": 8,
+  "sourceWork": "Don Quijote de la Mancha",
+  "explanation": "Don Quijote proclama que la autonomía moral y la independencia del alma valen más que todas las riquezas mundanas. La libertad no es un capricho egoísta, sino el valor supremo por el que es honroso arriesgarlo todo.",
+  "practicalInsight": "Valora tu independencia de criterio y no te dejes doblegar por presiones superficiales del entorno.",
+  "reflectionPrompt": "¿Eres verdaderamente dueño de tus decisiones o actúas por complacer a los demás?"
+}

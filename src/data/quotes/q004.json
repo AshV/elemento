@@ -1,0 +1,20 @@
+{
+  "id": "q004",
+  "content": "De todos los instrumentos del hombre, el más asombroso es el libro; los demás son extensiones de su cuerpo, pero el libro es una extensión de la memoria y la imaginación.",
+  "author": "Jorge Luis Borges",
+  "authorSlug": "jorge-luis-borges",
+  "category": "Conocimiento y Aprendizaje",
+  "categorySlug": "conocimiento-lectura",
+  "mood": "joyful",
+  "tags": [
+    "libros",
+    "memoria",
+    "imaginación",
+    "literatura"
+  ],
+  "duration": 8,
+  "sourceWork": "El libro",
+  "explanation": "Para Borges, leer es dialogar a través de los siglos con espíritus afines. Mientras el telescopio prolonga la vista y la espada la fuerza, el libro es el milagro que trasciende la mortalidad del cuerpo humano conectando almas.",
+  "practicalInsight": "Dedica hoy al menos quince minutos de lectura atenta, lejos de pantallas y notificaciones digitales.",
+  "reflectionPrompt": "¿Qué libro ha transformado de raíz tu manera de comprender el mundo?"
+}
