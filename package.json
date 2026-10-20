@@ -11,10 +11,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate:videos": "wisdom --url http://localhost:4321/elemento/",
-    "status:videos": "wisdom --url http://localhost:4321/elemento/ --status",
-    "publish:social": "wisdom publish --all",
-    "status:social": "wisdom publish --status"
+    "generate:videos": "node ../wisdom-studio/bin/generate.js --site elemento",
+    "status:videos": "node ../wisdom-studio/bin/generate.js --site elemento --status",
+    "publish:social": "node ../wisdom-studio/bin/publish.js --site elemento --all",
+    "status:social": "node ../wisdom-studio/bin/publish.js --site elemento --status"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
