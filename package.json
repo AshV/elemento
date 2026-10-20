@@ -12,7 +12,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "generate:videos": "wisdom --url http://localhost:4321/elemento/",
-    "status:videos": "wisdom --url http://localhost:4321/elemento/ --status"
+    "status:videos": "wisdom --url http://localhost:4321/elemento/ --status",
+    "publish:social": "wisdom publish --all",
+    "status:social": "wisdom publish --status"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
